@@ -1,0 +1,23 @@
+*{
+    background-color: rgb(122, 234, 92);
+}
+
+div{
+    background-color: aqua;
+}
+.abc{
+    background-color: palevioletred;
+    color: brown;
+    border: 5px dotted red;
+    border-radius: 5px;
+}
+h1{
+    background-color: blue;
+    
+}
+
+
+
+#head1{
+    background-color: red;
+}
