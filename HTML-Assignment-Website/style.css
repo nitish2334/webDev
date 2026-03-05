@@ -1,0 +1,21 @@
+header{
+    background-color: wheat;
+    border: 5px solid black;
+    border-radius: 5px;
+    color: white;
+}
+#B1{
+    color: blue;
+}
+.B2{
+    color: yellow;
+}
+.B3{
+    color: brown;
+}
+.B4{
+    color: green;
+}
+.c1{
+    background-color: aqua;
+}
