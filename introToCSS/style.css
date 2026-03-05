@@ -15,9 +15,34 @@ h1{
     background-color: blue;
     
 }
+.AAA{
+    background-color: BLACK;
+}
 
 
 
 #head1{
     background-color: red;
 }
+/* #newDIV {
+  width: 600px;
+  height: 200px;
+  border: 10px solid black;
+
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+#submitButton {
+  padding: 5px 15px;
+  border: 1px solid rgb(1, 91, 40);
+  border-radius: 7px;
+  background-color: #029852;
+  color: aliceblue;
+  margin: 0 auto;
+}
+
+
+#something{
+  text-align: center;
+} */
