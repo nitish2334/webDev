@@ -1,0 +1,53 @@
+.A1{
+    background-color: rgb(159, 224, 250);
+    
+    
+}
+h1{
+    text-align: center;
+}
+
+div{
+    margin: 8px auto;
+    padding:20px ;
+    width: 550px;
+    border-radius: 10px; 
+
+   
+} 
+input{
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    
+   
+
+}
+select{
+    width: 200px;
+    padding: 9px;
+    border-radius: 10px;
+} 
+.collage{
+    width:165%;
+    padding: 8px;
+}
+.A2{
+   margin-top: 20px;
+}
+.sub{
+    text-align: center;
+     margin: 20px;
+    
+    
+
+}
+
+
+
+   
+
+
+    
+
+
