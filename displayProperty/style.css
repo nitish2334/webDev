@@ -1,34 +1,34 @@
-*{
-    padding: 0;
-    margin: 0;
-    
+* {
+  padding: 0;
+  margin: 0;
 }
 
-
-
-.a{
-    width: 200px;
-    height: 200px;
-   
+.a {
+  width: 200px;
+  height: 200px;
 }
-#mydiv,#mydiv2, #mydiv3{
-    background-color: gray;
-   border: 1px solid #000;
+#mydiv,
+#mydiv2,
+#mydiv3 {
+  background-color: gray;
+  border: 1px solid #000;
+}
+#mydiv2,
+#mydiv3,
+#mydiv {
+  display: inline-block;
+}
+.b {
+  width: 200px;
+  height: 200px;
+}
+#myspan,
+#myspan2,
+#myspan3 {
+  background-color: red;
+  border: 1px solid #000;
+}
 
-}
-#mydiv2{
-    display:inline;
-
-}
-.b{
-    width: 200px;
-    height: 200px;
-}
-#myspan, #myspan2, #myspan3{
-    background-color: red;
-    border: 1px solid #000;
-}
-
-#myspan2{
-    display: inline-block;
+#myspan2 {
+  display: inline-block;
 }
