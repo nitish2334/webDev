@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    background-color: rgb(93, 93, 231);
+    display : flex ;
+    justify-content: center;
+    gap: 100px;
+    height: 80vh;
+    padding-bottom: 20vh;
+
+    align-items: center;
+}
+.card{
+    background-color: aliceblue;
+    max-height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    gap: 20px;
+    width: 300px;
+}
+.form-field{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom:solid grey ;
+}
+.form-field input{
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    
+}
+.term{
+    display: flex;
+    justify-content: space-between;
+}
+.submitButton button{
+    background-color: blue;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.referencr link{
+    text-align: center;
+}
+.submitButton button:active{
+    background-color: aliceblue;
+    color: skyblue;
+    border:2px solid  skyblue;
+    font-weight: bolder;
+}
+.form-field input:focus{
+   border:2px solid  skyblue;  
+   border-radius: 5px;
+
+}

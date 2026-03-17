@@ -2,9 +2,11 @@
     height: 700px;
     width: 700px;
     border: 1px solid #000;
-     display: flex; 
-    justify-content:baseline;
+     display:grid;  
+    justify-items:end;
     align-items: end;
+   
+    background-color: black;
 
     
 }
