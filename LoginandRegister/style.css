@@ -4,7 +4,7 @@
 }
 
 #main{
-    background-color: rgb(93, 93, 231);
+    background-color: skyblue;
     display : flex ;
     justify-content: center;
     gap: 100px;
@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 .submitButton button{
-    background-color: blue;
+    background-color:skyblue;
     width: 100%;
     padding: 10px;
     border: none;
@@ -60,4 +60,8 @@
    border:2px solid  skyblue;  
    border-radius: 5px;
 
+}
+a{
+    text-decoration: none;
+    color: skyblue;
 }
