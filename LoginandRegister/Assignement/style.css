@@ -17,10 +17,10 @@ body {
   max-width: 1000px;
   min-height: 1000px;
 
-  margin: 50px;
+  margin: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3    5px 55px rgba(0, 0, 0, 0.1);
 }
 
 #left1{
@@ -81,7 +81,7 @@ body {
   margin-bottom: 20px;
 }
 .text1 {
-  color: rgb(186, 204, 188);
+  color: rgb(255, 246, 246);
 
   margin-bottom: 20px;
 }
@@ -89,10 +89,122 @@ body {
   color: rgb(223, 223, 34);
 }
 
-.me{
-    background-color: rgb(168, 163, 163);
+#right{
+    background-color: lightgray
+    
+
+}
+#me{
+  margin: 2dvh;
+  
+}
+.about{
+  margin-top: 100px;
+  margin: 2px;
+  padding: 10px;
+  margin-right: 20px;
+  color: lightslategrey;
+}
+.text{
+  color:red;
+}
+.one{
+  color: #085d85;
+
+}
+#container #rightSide {
+  position: relative;
+  background: rgb(245, 243, 243);
+  padding: 40px;
+}
+#aboutMe {
+  margin-bottom: 50px;
 }
 
-h1{
-    color: rgb(80, 80, 109);
+#experience {
+  display:grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
 }
+#experienceM {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#experienceM #leftdiv {
+  margin-right: 120px;
+}
+#experience #rightdiv {
+  margin: auto;
+}
+#experience #exP {
+  margin-bottom: 50px;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1;
+  font-size: medium;
+  margin: 10px 10px;
+}
+
+.position {
+  color: #03a9f4;
+}
+
+#education {
+  display: grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
+}
+#educationM {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#educationM #leftdiv {
+  margin-right: 120px;
+}
+#education #award {
+  display: grid;
+  justify-items: baseline;
+  margin: 10px;
+  gap: 1px;
+}
+
+#awardm {
+  display: flex;
+
+  .company {
+    color: #03a9f4;
+  }
+  margin: auto;
+
+  margin-top: 10px;
+}
+
+#awardm #leftdiv {
+  margin-right: 120px;
+}
+#award #certificate {
+  margin-bottom: 100px;
+}
+
+#education #edu {
+  margin-bottom: 80px;
+}
+
