@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#page {
+  border: 1px solid #000;
+  width: 794px;
+  height: 1123px;
+  margin: 10px auto;
+  display: flex;
+}
+#sidebar {
+  width: 35%;
+  background-color: #34495e;
+  padding: 20px;
+}
+#maincontai {
+  width: 65%;
+  background-color: #d6dbdf;
+}
+#image {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+
+  img{
+    width: inherit ;
+    height: inherit;
+  }
+}
+#name{
+  color: aqua;
+  text-align: center;
+  
+}
+#desig{
+  text-align: center;
+  color: yellow;
+ 
+
+}
+/* #desig{
+   color: yellow;
+   font-variant: small-caps;
+   font-size: larger;
+
+} */
+hr{
+  margin-top: 5px;
+   border: 1px solid #000;
+}
+.sidebarhaeding{
+  margin-top: 20px;
+  color: aliceblue;
+  padding: 20px;
+ 
+ 
+}
+.info{
+  padding: 10px;
+}
+.sidebargreytex{
+  color: darkgrey;
+  padding: 5px;
+  font-size: large;
+
+ 
+}
+#contactinfo{
+  display: grid;
+  grid-template-columns:30px auto ;
+  align-items: center;
+}

@@ -1,21 +1,43 @@
+:root{
+  --background--color: orange;
+--color:purple;  
+--text--color: greenyellow;
+
+}
+td{
+    background-color: var(--background--color);
+}
+
+
+
 header{
-    background-color: wheat;
+    background-color: var(--background--color);
     border: 5px solid black;
     border-radius: 5px;
     color: white;
 }
+
 #B1{
-    color: blue;
+    color: var(--color);
+   
+    
 }
 .B2{
-    color: yellow;
+    color: var(--color);
 }
 .B3{
-    color: brown;
+    color: var(--color);
 }
 .B4{
-    color: green;
+    color: var(--color);
 }
 .c1{
-    background-color: aqua;
+    background-color: var(--colorL);
+    color: var(--text--color);
+    
+}
+.c2{
+      background-color: var(--text--color);
+      color: var(--background--color) ;
+
 }

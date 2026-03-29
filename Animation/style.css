@@ -1,0 +1,27 @@
+#divil {
+  border: 1px solid black;
+  width: 10px;
+  height: 20px;
+  overflow: hidden;
+  text-wrap-mode: nowrap;
+}
+#divil:hover {
+  width: 200px;
+  transition: width 10s linear ;
+}
+ #card {
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+   /* align-items: center;  */
+
+  transform: rotatez(0deg);
+  transition: transform 2s linear ;    
+  
+
+}
+#card:hover {
+  transform: rotatez(36000deg);
+  transition: transform 20s linear ;
+} 

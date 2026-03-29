@@ -20,10 +20,10 @@ body {
   margin: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  box-shadow: 0 3    5px 55px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3 5px 55px rgba(0, 0, 0, 0.1);
 }
 
-#left1{
+#left1 {
   background-color: #085d85;
   color: white;
   padding: 40px;
@@ -85,32 +85,31 @@ body {
 
   margin-bottom: 20px;
 }
-.textcolor{
+.textcolor {
   color: rgb(223, 223, 34);
 }
 
-#right{
-    background-color: lightgray
-    
-
+#right {
+  background-color: lightgray;
 }
-#me{
+#me {
   margin: 2dvh;
-  
 }
-.about{
+.about {
   margin-top: 100px;
   margin: 2px;
   padding: 10px;
   margin-right: 20px;
+  color: rgb(99, 169, 239);
+}
+.about1 {
   color: lightslategrey;
 }
-.text{
-  color:red;
+.text {
+  color: red;
 }
-.one{
+.one {
   color: #085d85;
-
 }
 #container #rightSide {
   position: relative;
@@ -122,10 +121,11 @@ body {
 }
 
 #experience {
-  display:grid;
+  display: grid;
   justify-items: baseline;
   margin: 10px;
   gap: 1px;
+  color: lightslategrey;
 }
 #experienceM {
   display: flex;
@@ -184,10 +184,13 @@ p {
   justify-items: baseline;
   margin: 10px;
   gap: 1px;
+ 
+  
 }
 
 #awardm {
   display: flex;
+   padding: 10px;
 
   .company {
     color: #03a9f4;
@@ -199,12 +202,13 @@ p {
 
 #awardm #leftdiv {
   margin-right: 120px;
+  padding: 5px;
 }
 #award #certificate {
   margin-bottom: 100px;
+
 }
 
 #education #edu {
   margin-bottom: 80px;
 }
-
