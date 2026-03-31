@@ -1,0 +1,25 @@
+:root {
+  --background--color: orange;
+  --color: hwb(0 8% 12%);
+  --text--color: greenyellow;
+}
+h1{
+     /* background-color: var(--background--color);  */
+    color: var(--text--color);
+   
+}
+h2{
+    color: var(--color);
+    /* background-color: var(--background--color); */
+}
+#task{
+    color: var(--text--color);
+}
+a{
+    color: var(--color);
+    background-color: var(--background--color);
+}
+p{
+     /* background-color: var(--background--color); */
+     color: var(--text--color); 
+}
