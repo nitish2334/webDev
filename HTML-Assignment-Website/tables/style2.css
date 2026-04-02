@@ -1,7 +1,11 @@
 :root {
-  --background--color: skyblue;
+  --background--color: orange;
   --color: hwb(0 8% 12%);
-  --:text--color: hwb(247 5% 39%);
+  --text--color: #adff2f;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 700px;
+  
 }
 h1{
      /* background-color: var(--background--color);  */
@@ -10,14 +14,15 @@ h1{
 }
 h2{
     color: var(--color);
-    /* background-color: var(--background--color); */
-}
+     /* background-color: var(--background--color); 
+} */
 #task{
-    color: var(--text--color);
+    color: var(--color);
+    
 }
 a{
     color: var(--text--color);
-    background-color: var(--background--color);
+    /* background-color: var(--background--color); */
     
 }
 p{

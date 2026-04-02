@@ -1,7 +1,7 @@
 :root {
   --background--color: skyblue;
   --color: hwb(0 8% 12%);
-  --:text--color: hwb(247 5% 39%);
+  --text--color: greenyellow;
 }
 h1{
      /* background-color: var(--background--color);  */

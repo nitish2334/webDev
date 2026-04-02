@@ -1,0 +1,41 @@
+:root {
+  --main-color: red;
+  --sub-color: lightgreen;
+  --text-color: orange;
+}
+h1 {
+  color: var(--text-color);
+}
+h2 {
+  color: var(--main-color);
+}
+p{
+  color: var(--sub-color);
+}
+th {
+  color: var(--text-color);
+  background-color: var(--sub-color);
+}
+td {
+  color: var(--main-color);
+}
+#login {
+  background-color: var(--main-color);
+}
+#reg {
+  background-color: var(--text-color);
+}
+button {
+  border: 1px solid black;
+  padding: 8px 15px;
+  border-radius: 9px;
+}
+table{
+    /* border: 1px solid var(--text-color); */
+    border-collapse: collapse;
+}
+th,
+td{
+       border: 1px solid var(--text-color);
+
+}

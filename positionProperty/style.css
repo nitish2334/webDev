@@ -1,14 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: rgb(212, 206, 204);
+#head {
+  padding: 10px;
+  background-color: greenyellow;
+  position: sticky;
+  top: 10px;
+  z-index: 99;
 }
- h1{
-    align-items: center;
-    color: #000;
+
+#helpButton {
+  width: 25px;
+  height: 25px;
+
+  padding: 20px;
+  background-color: gainsboro;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
 }
-.nav{
-    align-items: center;
+
+#something {
+  border: 1px solid #000;
+  background: aqua;
+  width: 700px;
+  height: 300px;
+  position: relative;
+}
+
+#Img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+#visitButton {
+  position: absolute;
+  top: 50%;
+  left: calc();
 }
