@@ -1,6 +1,6 @@
 :root {
   --main-color: red;
-  --sub-color: lightgreen;
+  --sub-color: hsl(255, 80%, 12%);
   --text-color: orange;
 }
 h1 {
@@ -9,7 +9,7 @@ h1 {
 h2 {
   color: var(--main-color);
 }
-p{
+p {
   color: var(--sub-color);
 }
 th {
@@ -18,24 +18,41 @@ th {
 }
 td {
   color: var(--main-color);
+  background-color: var(--text-color);
 }
 #login {
   background-color: var(--main-color);
+
+  bottom: 10px;
+  right: 20px;
 }
 #reg {
   background-color: var(--text-color);
+
+  margin-right: 100px;
+  bottom: 10px;
+  right: 9px;
+  
+ 
 }
+
 button {
   border: 1px solid black;
   padding: 8px 15px;
-  border-radius: 9px;
+  border-radius: 100px;
+  position: fixed;
+  border: none;
+ height: 45px;
+
+
+
 }
-table{
-    /* border: 1px solid var(--text-color); */
-    border-collapse: collapse;
+
+table {
+  /* border: 1px solid var(--text-color); */
+  border-collapse: collapse;
 }
 th,
-td{
-       border: 1px solid var(--text-color);
-
+td {
+  border: 1px solid var(--text-color);
 }
