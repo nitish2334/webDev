@@ -14,3 +14,13 @@
     width: 100%;
     max-width: 400px;
 }
+#register{
+    color: hsl(17, 87%, 53%);
+}
+#navbar{
+    background-color: hsl(17, 87%, 53%);
+    height: 64px;
+    span{
+       
+    }
+}
