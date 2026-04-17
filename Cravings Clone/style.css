@@ -1,0 +1,16 @@
+.background{
+    height: 80vh;
+    background: url(caravin\ background.jpg) no-repeat center center/cover;
+    position: relative;
+}
+.navbar{
+    background-color: hsl(17, 87%, 53%);
+}
+.rating{
+    background-color: hsl(17, 87%, 53%);
+}
+.form-box{
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}

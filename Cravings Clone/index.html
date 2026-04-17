@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cravings</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- login nad regiester btn -->
+
+  <div class="navbar   navbar-expand-lg navbar-dark sticky-top px-4">
+    <img src="image1.png" alt="" width="80px" height="40px">
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse justify-content-end " id="nav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index1.html">Login</a>
+        </li>
+        <li class="nav-item ms-2">
+          <a class="btn btn-outline-light rounded-1" href="index2.html">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="background d-flex align-items-center justify-content-center text-center text-white">
+
+    <div>
+      <h1 class="fw-bold">Your Favorite Food,<br>Delivered Fast</h1>
+
+      <p>Order from thousands of restaurants and get it delivered to your doorstep</p>
+
+      <div class="mt-3">
+        <a href="index2.html" class="btn btn-primary m-2">Sign Up</a>
+        <a href="order-now.html" class="btn btn-light">Order Now</a>
+      </div>
+
+      <!-- SEARCH BAR -->
+      <div class="mt-4">
+        <div class="input-group w-75 mx-auto">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+          <input type="text" class="form-control" placeholder="Search restaurants or dishes...">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ================= RESTAURANTS ================= -->
+  <section class="py-5 text-white restaurant-section">
+    <div class="container text-start">
+      <h3 class="fw-bold">Featured Restaurants</h3>
+      <p class="text-light">3 restaurants available</p>
+
+      <div class="row g-4 mt-3">
+
+        <!-- resturent image -->
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="resturent img1.jpeg" class="card-img-top">
+            <div class="rating position-absolute top-0 end-0 m-2 px-3 py-1 rounded-pill text-white fw-bold bg">
+              <i class="bi bi-star-fill"></i>3.6
+
+            </div>
+            <div class="card-body text-start">
+              <h5>Under The Mango Tree</h5>
+              <p> Enjoy the thrill of grill and barbecue at under the <br> mango tree resturant at jehan numa <br>
+                palace, bhopal head here now! </p>
+              <p>⭐ 4.5 · 120 reviews</p>
+              <span class="badge bg-light text-dark p-2">Indian</span>
+              <span class="badge bg-light text-dark p-2">Chineese</span>
+              <span class="badge bg-light text-dark p-2">Italian</span>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary btn-sm">Explore Menu</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat Cards -->
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="resturent img2.jpeg" class="card-img-top">
+            <div class="rating position-absolute top-0 end-0 m-2 px-3 py-1 rounded-pill text-white fw-bold bg">
+              <i class="bi bi-star-fill"></i>4.6
+
+            </div>
+            <div class="card-body text-start">
+              <h5>Raj Darbar</h5>
+              <p class="text-muted">Raj Darbar is a one -of-a-kind restaurant <br> that offers a unique dining
+                experience families <br> and friends with a dhaba-style theme.</p>
+              <p>⭐ 4.6 · 140 reviews</p>
+              <span class="badge bg-light text-dark p-2">Indian</span>
+              <span class="badge bg-light text-dark p-2">Chineese</span>
+              <span class="badge bg-light text-dark p-2">Italian</span>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary btn-sm">Explore Menu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+
+            <img src="resturent imng3.webp" class="card-img-top">
+            <div class="rating position-absolute top-0 end-0 m-2 px-3 py-1 rounded-pill text-white fw-bold bg">
+              <i class="bi bi-star-fill"></i>3.6
+
+            </div>
+            <div class="card-body text-start">
+              <h5>Countryside Culture</h5>
+              <p class="text-muted">A hidden gem away from the city offering lush <br> green meadows and peaceful
+                walking paths for <br> relaxation.</p>
+              <p>⭐ 4.4 · 100 reviews</p>
+              <span class="badge bg-light text-dark p-2">Indian</span>
+              <span class="badge bg-light text-dark p-2">Chineese</span>
+            </div>
+            <div class="card-footer text-center">
+              <a href="#" class="btn btn-primary btn-sm">Explore Menu</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="py-5 bg-light text-center">
+    <h4 class="fw-bold fs-1">Cravings by the Numbers</h4>
+    <p>See why millions trust us for their daily food delivery needs</p>
+
+    <div class="container mt-4">
+      <div class="row g-3">
+
+        <div class="col-md-3">
+          <div class="p-4 bg-white shadow rounded">
+            <h4 class="text-primary">2.5M+</h4>
+
+
+/            <p>Successful Deliveries</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-4 bg-white shadow rounded">
+            <h4 class="text-danger">500K+</h4>
+            <p>Happy Customers</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-4 bg-white shadow rounded">
+            <h4 class="text-success">5K+</h4>
+            <p>Partner Restaurants</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="p-4 bg-white    shadow rounded">
+            <h4 class="text-warning">1K+</h4>
+            <p>Active Riders</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class=" cta text-center text-white py-5 bg">
+    <h4><b>Become a Restaurant Partner</b></h4>
+    <p class="text-center text-white small mb-5">
+      Grow your business with Cravings. Join thousands of restaurants already delivering with us.
+    </p>
+    <a href="../loginRegister/registerCravings.html" class=" partner btn btn-light mt-2">Partner With Us</a>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer pt-5">
+
+    <div class="container text-center text-md-start">
+
+      <!-- TOP TEXT -->
+      <p class="text-center text-white small mb-5">
+        --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+      </p>
+
+      <div class="row align-items-start">
+
+        <!-- LOGO -->
+        <div class="col-md-3 text-center mb-4">
+          <img src="circle carving.png" class="footer-logo" width="100pcx" height="100px">
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">Quick Links</h6>
+          <a href="./craving.html">Home</a><br>
+          <a href="about.html">About</a><br>
+          <a href="order-now.html">Order Now</a>
+        </div>
+
+        <!-- RESTAURANTS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">For Restaurants</h6>
+          <a href="../loginRegister/registerCravings.html">Partner With Us</a><br>
+          <a href="#">Restaurant Dashboard</a>
+        </div>
+
+        <!-- RIDERS -->
+        <div class="col-md-2 mb-4">
+          <h6 class="fw-bold text-white">For Riders</h6>
+          <a href="../loginRegister/registerCravings.html">Become a Rider</a><br>
+          <a href="#">Rider Dashboard</a>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold text-white">Feedback & Support</h6>
+          <a href="feedback.html">Submit Feedback</a><br>
+          <a href="help-center.html">Help Center</a><br>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+      </div>
+
+      <hr class="b">
+
+      <!-- BOTTOM BAR -->
+      <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start text-white">
+        <p>© 2026 Cravings. All rights reserved.</p>
+
+        <div>
+          <a href="privacy-policy.html" class="me-3">Privacy Policy</a>
+          <a href="terms-of-service.html" class="me-3">Terms of Service</a>
+          <a href="sitemap.html">Site Map</a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
