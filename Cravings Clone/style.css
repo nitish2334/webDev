@@ -1,7 +1,7 @@
 .background{
     height: 80vh;
     background: url(caravin\ background.jpg) no-repeat center center/cover;
-    position: relative;
+    
 }
 .navbar{
     background-color: hsl(17, 87%, 53%);
@@ -16,11 +16,20 @@
 }
 #register{
     color: hsl(17, 87%, 53%);
+   
 }
 #navbar{
     background-color: hsl(17, 87%, 53%);
     height: 64px;
-    span{
-       
-    }
+   
 }
+.resturentbg {
+    background: linear-gradient(to bottom, #f97316, white);
+}
+.footer{
+   background-color: #57595B;
+}
+ .cta   {
+        background-color: hsl(17, 87%, 53%);
+
+    }
