@@ -1,7 +1,7 @@
 
+"use strict"
 
-
-
+  
 let a;
 let b;
 let c;
@@ -29,4 +29,4 @@ function abc() {
     console.log("i am a function");
     
 }
-G                
+                
