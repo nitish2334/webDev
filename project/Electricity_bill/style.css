@@ -1,11 +1,11 @@
-.tip{
-    background-color: navy;
+.container{
+    background-color: #060655;
    
    
 }
 
 
 
-.h1{
-    background-color: hsl(39, 100%, 50%);
+.tip{
+    background-color: lch(85.59% 83.64 96.77);
 }

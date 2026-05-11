@@ -1,0 +1,52 @@
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+
+
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+
+#guess{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 16px;
+} */
+
+#submitBtn{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    background: #111;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* #submitBtn:hover{
+    filter: brightness(1.1);
+} */
+
+ .message{
+    min-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #111;
+}
+
