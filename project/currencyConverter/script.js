@@ -10,7 +10,7 @@ const convertBtn = document.getElementById("convertBtn");
 
 let countryData = [];
 
-// LOAD COUNTRIES
+
 
 async function loadCountries() {
   const response = await fetch("codde.json");
@@ -22,7 +22,7 @@ async function loadCountries() {
   const uniqueCountries = new Set();
 
   data.forEach((country) => {
-    // SKIP EMPTY OR DUPLICATE
+  
 
     if (!country.Currency_Code || uniqueCountries.has(country.Country)) {
       return;
@@ -30,7 +30,7 @@ async function loadCountries() {
 
     uniqueCountries.add(country.Country);
 
-    // COUNTRY 1 OPTION
+  
 
     const option1 = document.createElement("option");
 
@@ -40,7 +40,7 @@ async function loadCountries() {
 
     country1.appendChild(option1);
 
-    // COUNTRY 2 OPTION
+    
 
     const option2 = document.createElement("option");
 
@@ -51,7 +51,6 @@ async function loadCountries() {
     country2.appendChild(option2);
   });
 
-  // DEFAULT VALUES
 
   country1.value = "usd,US";
 
@@ -66,21 +65,20 @@ async function loadCountries() {
 
 loadCountries();
 
-// UPDATE FLAGS
 
 function updateFlag(select, flag) {
   const countryCode = select.value.split(",")[1];
 
   flag.src = `https://flagsapi.com/${countryCode}/flat/64.png`;
 
-  // IF FLAG NOT FOUND
+
 
   flag.onerror = () => {
     flag.src = "https://via.placeholder.com/64";
   };
 }
 
-// FLAG CHANGE EVENTS
+
 
 country1.addEventListener("change", () => {
   updateFlag(country1, flag1);
@@ -90,7 +88,7 @@ country2.addEventListener("change", () => {
   updateFlag(country2, flag2);
 });
 
-// CONVERT CURRENCY
+
 
 async function convertCurrency() {
   errorMessage.innerText = "";
@@ -127,14 +125,14 @@ async function convertCurrency() {
     return;
   }
 
-  // LOADING BUTTON
+  
 
   convertBtn.innerHTML = `
     <span class="spinner-border spinner-border-sm"></span>
     Loading...
   `;
 
-  // GET CURRENCIES
+
 
   const fromCurrency = country1.value.split(",")[0];
 
