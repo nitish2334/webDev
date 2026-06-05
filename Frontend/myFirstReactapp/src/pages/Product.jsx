@@ -1,11 +1,10 @@
-function About() {
+function Product() {
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <span className="text-primary fs-2">About</span>
+        <span className="text-primary fs-2">Product</span>
       </div>
     </>
   );
 }
-
-export default About;
+export default Product;
