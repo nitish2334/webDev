@@ -1,4 +1,4 @@
-import HelpPage from "../assets/HelpPage.jpg";
+import Helpcenter from "../assets/Helpcenter.jpg";
 function HelpCenter() {
   return (
     <>
@@ -6,7 +6,7 @@ function HelpCenter() {
         <div className="position-relative login w-100 h-100">
           <div className="login-bg">
             <img
-              src={HelpPage}
+              src={Helpcenter}
               alt="FoodTable"
               className="object-fit-cover"
             />

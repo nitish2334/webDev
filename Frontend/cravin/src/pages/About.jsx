@@ -1,4 +1,4 @@
-import aboutPage from "../assets/aboutPage.png";
+import about from "../assets/aboutPage.png";
 
 function About() {
   return (
