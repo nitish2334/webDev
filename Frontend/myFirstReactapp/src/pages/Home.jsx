@@ -15,7 +15,7 @@ function Home() {
       
 
          <div className="container d-flex justify-content-center align-items-center ">
-            <img src={company} alt="Company " className="img-fluid  w-100" />
+            <img src={company} alt="Company " className="img-fluid  w-50" />
         
        <div className="border p-3 w-50 bg-light shadow rounded ">
      

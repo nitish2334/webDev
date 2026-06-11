@@ -5,7 +5,7 @@ function Register() {
       <main>
         <div className="d-flex align-items-center login position-relative bg-light-subtle">
           <div className="login-bg">
-            <img src={foodtable} alt="FoodTable" className="object-fit-cover" />
+            <img src={foodtable.png} alt="FoodTable" className="object-fit-cover" />
           </div>
           <div className="d-flex register-div card position-absolute flex-column gap-2 px-5 py- rounded-3 mx-2 bg-light ms-auto me-4">
             <h1 className="text-center text-danger mt-1 fw-bold">

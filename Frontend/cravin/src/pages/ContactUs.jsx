@@ -1,4 +1,4 @@
-import contactus from "../assets/contactPage.jpg";
+import contact from "../assets/contactPage.jpg";
 
 function ContactUs() {
   return (
@@ -6,7 +6,7 @@ function ContactUs() {
       <main>
         <div className="position-relative login w-100 h-100">
           <div className="login-bg">
-            <img src={contactus} alt="FoodTable" className="object-fit-cover" />
+            <img src={contact} alt="FoodTable" className="object-fit-cover" />
           </div>
           <div className="login-div card d-grid position-absolute">
             <h2 className="text-center fw-bolder">Contact Us</h2>
