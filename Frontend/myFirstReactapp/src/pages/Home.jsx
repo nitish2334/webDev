@@ -18,7 +18,7 @@ function Home() {
             <img src={company} alt="Company " className="img-fluid  w-50" />
         
        <div className="border p-3 w-50 bg-light shadow rounded ">
-     
+      
         <h1 className="text-center">Welcome to Our Website</h1>
         <p className="text-center">
           We are glad to have you here! Explore our products, learn more about us,
