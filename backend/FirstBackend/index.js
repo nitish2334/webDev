@@ -9,6 +9,7 @@ import publicRouter from "./src/routers/public.route.js";
 
 
 const app = express();
+app.use (express.json())
 
 
 app.use("//auth", authRouter);
@@ -31,6 +32,14 @@ app.get("/", (req, res) => {
     res.json({ message: "welcome to my first backend project" })
 
 });
+
+// default error handler
+app.use((err, req, res, next) => {
+    const ErrMessage = err.message || "Internal Server Error"
+    const ErrorStatusCode = err.status
+
+});
+
 
 
 app.post("/login", (req, res) => {
@@ -55,7 +64,7 @@ res.json({ message: "Update successful" })
 
 
 
-app.Delete("/login", (req, res) => {
+app.delete("/login", (req, res) => {
 res.json({ message: "Delete successful" })
 })
 
@@ -66,7 +75,7 @@ res.json({ message: "Delete successful" })
 
 
 
-const port = process.env.PORT || 5000;
+const Port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log("server started on port:", port);
 });

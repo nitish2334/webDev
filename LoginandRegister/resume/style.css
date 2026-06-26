@@ -12,7 +12,7 @@
 #sidebar {
   width: 35%;
   background-color: #34495e;
-  padding: 20px;
+  padding: 30px;
 }
 #maincontai {
   width: 65%;
@@ -64,6 +64,7 @@ hr{
 color: black;
 }
 .sidebargreytex{
+
   color: darkgrey;
   padding: 5px;
   font-size: large;
@@ -74,4 +75,23 @@ color: black;
   display: grid;
   grid-template-columns:30px auto ;
   align-items: center;
+  text-decoration: none;
+  overflow-wrap:break-word;
+  word-break: break-word;
+}
+#skills{
+  color: #000;
+}
+.s{
+ display: grid;
+ gap: 30px;
+ padding: 20px;
+
+
+ 
+
+}
+
+.box{
+  margin-left: 50px;
 }

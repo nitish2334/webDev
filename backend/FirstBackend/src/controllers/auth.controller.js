@@ -42,6 +42,24 @@ export const LoginUser = (req, res) => {
   res.json({ message: "Login Successfull from Controller" });
 };
 
+if(!email || password){
+  const error  = new Error("All fields Required")
+  errorc.statusCode = 400;
+  return next (error);
+
+}
+
+
+
+
+
+const existingUser = await User.findOne({email});
+if (!existingUser){
+  const error = new Error ("Email not register");
+  error.statusCode =404;
+  return next(error);
+}
+
 export const LogoutUser = (req, res) => {
   res.json({ message: "Logout Successfull from Controller" });
 };
