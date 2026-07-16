@@ -1,81 +1,37 @@
-import dotenv from "dotenv";
+import dotenv from"dotenv";
 dotenv.config();
 
 
 import express from "express";
-import authRouter from "./src/routers/auth.route.js";
-import publicRouter from "./src/routers/public.route.js";
-
-
+import AuthRouter from "./src/routers/auth.route.js";
+import PublicRouter from "./src/routers/public.route.js";
+import connectDB from "./src/config/dbconnection.config.js";
 
 const app = express();
-app.use (express.json())
 
+app.use(express.json());
 
-app.use("//auth", authRouter);
-app.use("//public", publicRouter);
+app.use("/auth", AuthRouter);
+app.use("/public", PublicRouter);
 
+//Default API
+app.get("/", (req, res) => {
+  console.log("Default Get API Hit");
+  res.json({ message: "Welcome to my first backend Project" });
+});
 
+//Default Error Handler
 
-// default api
+app.use((err, req, res, next) => {
+  const ErrMessage = err.message || "Internal Server Error";
+  const ErrStausCode = err.statusCode || 500;
 
-app.use((err, req,res,next) =>{
-    const ErrMessage = err.message ||" Internal server Error";
-    const ErrstatusCode = err. ErrMessage
+  res.status(ErrStausCode).json({ message: ErrMessage });
 });
 
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-
-    console.log("Dafault Get API Hit")
-    res.json({ message: "welcome to my first backend project" })
-
-});
-
-// default error handler
-app.use((err, req, res, next) => {
-    const ErrMessage = err.message || "Internal Server Error"
-    const ErrorStatusCode = err.status
-
-});
-
-
-
-app.post("/login", (req, res) => {
-res.json({ message: "Login successful" })
-})
-
-
-app.get("/Logout", (req, res) => {
-res.json({ message: "Logout successful" })
-})
-
-
-app.post("/Register", (req, res) => {
-res.json({ message: "Register successful" })
-
-})
-
-
-app.put("/Update", (req, res) => {
-res.json({ message: "Update successful" })
-})
-
-
-
-app.delete("/login", (req, res) => {
-res.json({ message: "Delete successful" })
-})
-
-
-
-
-
-
-
-
-const Port = process.env.PORT || 5000;
 app.listen(port, () => {
-    console.log("server started on port:", port);
+  console.log("Server Started on port:", port);
+  connectDB();
 });

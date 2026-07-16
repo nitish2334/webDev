@@ -1,88 +1,26 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <div>
-     <img src="pexels-jplenio-1118873 (1).jpg" class="img-fluid"> 
-
-    <div
-      class="position-absolute top-50 start-50 translate-middle text-center border-1 rounded  shadow bg-transparent-white p-5 ">
-     
-      <input type="text" id="cityName" />
-      <button onclick="getWeather()">Get Weather</button>
-       <br />
-
-    <div class="text-danger">
-      <label>Temp : <span id="Temperature">30</span>ºC</label>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1>Weather App</h1>
+      <input type="text" id="cityname" placeholder="Enter City Name" />
     </div>
 
+    <button onclick="getWeather()">Get Weather</button>
 
+    <br />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div>
+      <label> <span id="Temperature"></span></label>
     </div>
 
-   
-  </div>
-
-  </div>
-
-
-
-
-
-
-  </div>
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script> 
-</body>
-
+    <a href="http://index2.html" onclick="getWeather()"></a>
+    <script src="script.js"></script>
+  </body>
 </html>
