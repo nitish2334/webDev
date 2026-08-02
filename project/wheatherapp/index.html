@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="weather-container">
-      <h1>Weather App</h1>
-      <input type="text" id="cityname" placeholder="Enter City Name" />
+    <div class="app-shell">
+      <div class="weather-container">
+        <div class="weather-header">
+          <h1>Weather App</h1>
+          <p>Enter a city name to see the current temperature.</p>
+        </div>
+
+        <div class="weather-form">
+          <input type="text" id="cityName" placeholder="Enter city name" />
+          <button onclick="getWeather()">Get Weather</button>
+        </div>
+
+        <div class="weather-result">
+          <span id="Temperature">--</span>
+          <p class="result-note">Temperature in Celsius</p>
+        </div>
+      </div>
     </div>
 
-    <button onclick="getWeather()">Get Weather</button>
-
-    <br />
-
-    <div>
-      <label> <span id="Temperature"></span></label>
-    </div>
-
-    <a href="http://index2.html" onclick="getWeather()"></a>
     <script src="script.js"></script>
   </body>
 </html>

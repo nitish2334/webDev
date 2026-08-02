@@ -20,7 +20,7 @@ async function getWeather() {
 }
 
 async function getGeoLocation(city) {
-  const GEO_LOC_API = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+  const GEO_LOC_API = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
 
   const response = await fetch(GEO_LOC_API);
   const data = await response.json();
