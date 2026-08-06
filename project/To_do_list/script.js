@@ -5,10 +5,42 @@ function addNewTask() {
   LI.classList.add("my-3");
 
   const DIV = document.createElement("div");
-  DIV.classList.add("d-flex", "align-items-center");
+  DIV.classList.add("d-flex", "align-items-center" );
 
   const SPAN1 = document.createElement("span");
   SPAN1.innerText = taskToAdd;
+
+  // Edit Button
+  const EDITBUTTON = document.createElement("button");
+  EDITBUTTON.classList.add(
+    "btn",
+    "btn-warning",
+    "ms-2",
+    "d-flex",
+    "gap-2",
+    "align-items-center",
+    "justify-content-center",
+    
+  );
+
+  const EDITICON = document.createElement("i");
+  EDITICON.classList.add("bi", "bi-pencil-square");
+
+  const EDITSPAN = document.createElement("span");
+  EDITSPAN.innerText = "Edit";
+
+  EDITBUTTON.appendChild(EDITICON);
+  EDITBUTTON.appendChild(EDITSPAN);
+
+  EDITBUTTON.onclick = () => {
+    const updatedTask = prompt("Edit Task", SPAN1.innerText);
+
+    if (updatedTask !== null && updatedTask.trim() !== "") {
+      SPAN1.innerText = updatedTask;
+    }
+  };
+
+  // Delate BUTTON
 
   const BUTTON = document.createElement("button");
   BUTTON.classList.add(
@@ -35,6 +67,10 @@ function addNewTask() {
   DIV.appendChild(BUTTON);
 
   LI.appendChild(DIV);
+
+  DIV.appendChild(SPAN1);
+  DIV.appendChild(EDITBUTTON);
+  DIV.appendChild(BUTTON);
 
   document.getElementById("taskDiv").classList.remove("d-none");
 

@@ -11,32 +11,23 @@
 
 </head>
 
-<body>
-    <header class="bg-primary text-light p-3 text-center">
+<body class="bg-warning" >
+    <header class="bg-primary text-light p-4 text-center  ">
         <h1>To Do List</h1>
     </header>
 
     <main>
-        <div class="container rounded border shadow my-2 d-flex gap-4 p-3">
-            <input type="text" name="newTask" id="newTask" placeholder="Add A New Task" class="form-control w-75" />
+        <div class="container rounded-4 border shadow my-5 d-flex gap-4 p-5   bg-info">
+            <input type="text" name="newTask" id="newTask" placeholder="Add A New Task" class="form-control w-75 p-5 " />
             <button class="btn btn-primary w-25 d-flex gap-3 align-items-center justify-content-center"
                 onclick="addNewTask()">
-                <i class="bi bi-plus-circle"></i> Add New Task
+                <i class="bi bi-plus-circle"></i><b> Add New Task</b>
             </button>
         </div>
 
-        <div class="container rounded border shadow my-2 p-3 d-none" id="taskDiv">
+        <div class="container rounded border shadow my-2 p-3 d-none bg-primary " id="taskDiv">
             <ol id="taskList">
-                <!-- <li class="my-3">
-            <div class="d-flex align-items-center">
-              <span>Task 1</span>
-              <button
-                class="btn btn-danger ms-4 d-flex gap-3 align-items-center justify-content-center"
-              >
-                <i class="bi bi-trash"></i>Delete
-              </button>
-            </div>
-          </li> -->
+         
             </ol>
         </div>
     </main>

@@ -813,3 +813,118 @@ ul li::marker {
   align-items: center;
   justify-content: center;
 }
+
+/* ==================== MODERN ENHANCEMENTS ==================== */
+
+/* Global Enhancements */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* Buttons Enhancement */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Cards Enhancement */
+.card {
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Controls */
+.form-control, .form-select {
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.display-5 {
+  font-weight: 800;
+}
+
+/* Badges */
+.badge {
+  padding: 8px 14px !important;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Sections */
+section {
+  padding: 50px 0;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: auto;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f97316;
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  section {
+    padding: 30px 0;
+  }
+  
+  #navbar {
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  .form-control, .form-select {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}

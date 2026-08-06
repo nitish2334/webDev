@@ -2,256 +2,234 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelpCenter</title>
-  <link rel="icon" type="image/x-icon" href="./images/circleLogo-DpCri5UD.png" />
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Cravings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .help-hero {
+            background: linear-gradient(135deg, #f97316 0%, #ff8c3a 100%);
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+        .help-hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .faq-section {
+            padding: 60px 0;
+        }
+        .accordion-button {
+            background-color: white;
+            color: #333;
+            font-weight: 600;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #f97316;
+            color: white;
+        }
+        .accordion-body {
+            background-color: #f5f5f5;
+        }
+    </style>
 </head>
 
 <body>
-
-
-  <!-- Header Part -->
-  <div id="header" class="d-flex  justify-content-between align-items-center gap-4  shadow-md">
-
-    <div class="headerLogo ">
-      <a href="./index.html">
-        <img src="image1.png" class="ms-3  flex-shrink-0" alt="Logo" />
-      </a>
+    <div id="navbar" class="d-flex justify-content-between align-items-center position-sticky top-0 z-2 shadow-m5"
+        style="background-color: #f97316; height: 64px;">
+        <span><img src="./image1.png" class="w-25 ms-3 ms-5" alt="" style="height: 40px;"></span>
+        <span>
+            <a href="login.html" class="btn border-light me-5 ms-2 text-light text-decoration-none">Login</a>
+            <a href="reg.html" class="btn bg-white me-5" style="color: #f97316; text-decoration: none;">Register</a>
+        </span>
     </div>
 
-    <div class="d-flex align-items-center gap-2 mt-2 mt-sm-0">
-      <a id="login" class="btn  px-3 w-100 text-light w-sm-auto" href="./login.html">
-        Login
-      </a>
-      <a id="register" class="btn btn-light px-3 w-100 w-sm-auto" href="./register.html">
-        Register
-      </a>
-    </div>
-  </div>
+    <section class="help-hero">
+        <div class="container">
+            <h1><i class="bi bi-question-circle-fill"></i> Help Center</h1>
+            <p class="fs-5">Browse FAQs or submit a support ticket below</p>
 
-
-
-  <main>
-    <div class="position-relative login w-100 h-100 ">
-      <div class="login-bg">
-        <img src="HelpPage.jpg" alt="FoodTable" class="object-fit-cover" />
-      </div>
-     
-      <div class="help-center  position-absolute bg-transparent rounded-2 border border-2 translate-middle">
-
-        <h2 class="text-center display-5 "> <i class="bi bi-question-circle-fill"></i> Help Center</h2>
-        <p class="text-center text-light">Browse FAQs or submit a support ticket below</p>
-
-        <div class=" align-items-center" id="mainouterdiv">
-          <div class="w-100">
-            <h2 class=" text-light">Frequently asked questions</h2>
-
-            <div class="pt-2  gap-2" id="divclass">
-              <div id="accordion">
-                <div class="rounded-1 overflow-hidden border">
-                  <h2 class="accordion-header d-flex justify-content-between align-items-center px-2 fw-bolder fs-2"
-                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                    <button
-                      class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center">
-                      <div>
-                        <i class="bi  bi-bag"></i>
-                        <span class="fs-6">How do I track my order?</span>
-                      </div>
-                    </button>
-                    <span class="text-white fw-bold h5">+</span>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
-                    <div class="accordion-body bg-secondary text-white">
-                      Go to your dashboard --- Order abd click on the active order to see live tracking
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex w-100 justify-content-between align-items-center">
-                <div class="w-100">
-                  <div id="accordion">
-                    <div class=" rounded-1 overflow-hidden border ">
-                      <h2 class="accordion-header d-flex justify-content-between align-items-center px-2" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                        <button
-                          class="border-0 btn text-white fw-semibold fs-6 bg-transparent  shadow-none d-flex align-items-center w-100">
-                          <div>
-                            <i class="bi bi-wallet "></i>
-                            <span class="fs-6">How do I get a refund?</span>
-                          </div>
-                        </button>
-                        <span class="text-white fw-bold h5">+</span>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
-                        <div class="accordion-body bg-secondary text-white">
-                          Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit. Facere voluptates sequi
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="w-100">
-                  <div id="accordion">
-                    <div class="rounded-1 overflow-hidden border">
-                      <h2 class="accordion-header d-flex justify-content-between align-items-center px-2" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                        <button
-                          class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100">
-                          <div>
-                            <i class="bi bi-bicycle"></i>
-                            <span class="fs-6">My rider is late. What do I do?</span>
-                          </div>
-                        </button>
-                        <span class="text-white fw-bold h5">+</span>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
-                        <div class="accordion-body bg-secondary text-white">
-                          Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit. Facere voluptates sequi
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="w-100">
-                  <div id="accordion">
-                    <div class="rounded-1 overflow-hidden border">
-                      <h2 class="accordion-header d-flex justify-content-between align-items-center px-2" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                        <button
-                          class="border-0 btn text-white fw-semibold fs-6 bg-transparent shadow-none d-flex align-items-center w-100">
-                          <div>
-                            <i class="bi bi-person"></i>
-                            <span class="fs-6">How do I update my account info?</span>
-                          </div>
-                        </button>
-                        <span class="text-white fw-bold h5">+</span>
-                      </h2>
-                      <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#privacyAccordion">
-                        <div class="accordion-body bg-secondary text-white">
-                          Lorem ipsum dolor sit amet, consectetur
-                          adipisicing elit. Facere voluptates sequi
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="input-group w-50 mx-auto mt-4">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search FAQs...">
             </div>
-
-          </div>
-
-
-          <!-- VERTICAL LINE -->
-          <div class="vr custom-line mx-4"></div>
-
-          <!-- Second Div  -->
-
-          <div id="SupportTicket">
-
-            <div class="support w-100">
-              <h2>Submit a Support Ticekt </h2>
-
-
-              <input type="text" placeholder="Enter yout full name">
-              <input type="text" placeholder="Enter your Email">
-
-
-              <select name="" id="">
-                <option value="">Select issue type</option>
-                <option value="">Account & Profile</option>
-                <option value="">Order Issue</option>
-                <option value="">payment & Billing</option>
-                <option value="">Delivery Problem</option>
-                <option value="">Restaurant & Menu</option>
-                <option value="">Other</option>
-              </select>
-
-              <input type="text" placeholder="eg. ORD-00123">
-              <textarea name="" id="">Please describe your problem in details</textarea>
-
-              <div id="btn" class="">
-                <button>Submit TIcket</button>
-              </div>
-
-
-            </div>
-          </div>
         </div>
-      </div>
-
-  </main>
-
-
-
-  <footer>
-    <section class="footer-section pt-4 pb-3">
-      <div class="footer-div w-100 mt-2 pb-5">
-        <p class="text-center">
-          --- Your favorite food delivery platform connecting customers with
-          restaurants and riders. ---
-        </p>
-        <div class="footer-outer d-grid pt-4">
-          <div class="footer-logo me-5 d-flex">
-            <img src="circle carving.png" alt="footerLogo" />
-          </div>
-
-          <div class="quick-links d-grid">
-            <h4 class="mb-1 fw-bold">Quick Links</h4>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./order.html">Order Now</a>
-          </div>
-
-          <div class="quick-links d-grid">
-            <h4 class="mb-1 fw-bold">For Restaurants</h4>
-            <a href="">Partner With Us</a>
-            <a href="">Restaurant Dashboard</a>
-          </div>
-
-          <div class="quick-links d-grid">
-            <h4 class="mb-1 fw-bold">For Riders</h4>
-            <a href="./rider.html">Become a Rider</a>
-            <a href="">Rider Dashboard</a>
-          </div>
-
-          <div class="quick-links d-grid">
-            <h4 class="mb-1 fw-bold">Feedback & Support</h4>
-            <a href="./feedback.html">Submit Feedback</a>
-            <a href="./helpcenter.html">Help Center</a>
-            <a href="./contact.html">Contact Us</a>
-          </div>
-        </div>
-      </div>
-      <div class="border-bottom footer-division"></div>
-      <div class="copy-right pt-4 d-flex justify-content-between">
-        <div class="d-flex gap-2">
-          <i class="bi bi-c-circle"></i>
-          <p>2026 Cravings. All rights reserved.</p>
-        </div>
-        <div class="d-flex gap-4">
-          <a href="./privacy-policy.html">Privacy Policy</a>
-          <a href="./terms-of-service.html">Terms of Service</a>
-          <a href="./sitemap.html">Site Map</a>
-        </div>
-      </div>
     </section>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="fw-bold mb-5">Frequently Asked Questions</h2>
+
+            <div class="accordion" id="faqAccordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <i class="bi bi-bag me-2"></i> How do I track my order?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can track your order in real-time through the Cravings app or website. Go to "My Orders" section and click on the active order to see live tracking with your rider's location and estimated delivery time.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <i class="bi bi-wallet2 me-2"></i> How do I get a refund?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            If you're not satisfied with your order, you can request a refund through the app. Go to "My Orders", select the order, and tap "Report Issue". Our support team will review and process your refund within 5-7 business days.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <i class="bi bi-clock me-2"></i> How long does delivery take?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Typical delivery time is 30-45 minutes from the time you place your order. However, this may vary depending on your location, traffic conditions, and restaurant preparation time. You'll see the estimated delivery time when you confirm your order.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <i class="bi bi-credit-card me-2"></i> What payment methods do you accept?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We accept multiple payment methods including credit/debit cards, digital wallets, and cash on delivery. You can choose your preferred payment method at checkout. All transactions are secure and encrypted.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            <i class="bi bi-shield-check me-2"></i> Is my personal information safe?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, your personal and payment information is protected using industry-standard encryption and security protocols. We never share your information with third parties without your consent. Read our Privacy Policy for more details.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            <i class="bi bi-star me-2"></i> How do I rate and review restaurants?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            After your order is delivered, you'll receive a notification to rate the restaurant and delivery experience. You can provide ratings and detailed reviews to help other users make informed decisions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
+                            <i class="bi bi-gift me-2"></i> Do you have any discounts or promo codes?
+                        </button>
+                    </h2>
+                    <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes! We regularly offer discounts and promotions. Check the "Offers" section in the app for current deals. You can also apply promo codes during checkout if you have one.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="accordion-item border rounded-3 mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
+                            <i class="bi bi-telephone me-2"></i> How do I contact support?
+                        </button>
+                    </h2>
+                    <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact our support team through the app's "Help" section, or email us at support@cravings.com. We also offer phone support during business hours. Response time is typically within 24 hours.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Still need help?</h2>
+            <p class="text-muted mb-4">Can't find what you're looking for? Contact our support team</p>
+            <div>
+                <a href="mailto:support@cravings.com" class="btn btn-primary me-3">Email Support</a>
+                <a href="#" class="btn btn-outline-primary">Live Chat</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer pt-5 bg-dark">
+        <div class="container text-center text-md-start">
+            <p class="text-center text-white small mb-5 fs-5">
+                --- Your favorite food delivery platform connecting customers with restaurants and riders. ---
+            </p>
+            <div class="row align-items-start">
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold text-white">Quick Links</h6>
+                    <a href="./index.html" style="color: #ccc; text-decoration: none;">Home</a><br>
+                    <a href="about.html" style="color: #ccc; text-decoration: none;">About</a><br>
+                    <a href="help.html" style="color: #ccc; text-decoration: none;">Help</a>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold text-white">For Restaurants</h6>
+                    <a href="partner.html" style="color: #ccc; text-decoration: none;">Partner With Us</a><br>
+                    <a href="#" style="color: #ccc; text-decoration: none;">Dashboard</a>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold text-white">For Riders</h6>
+                    <a href="rider.html" style="color: #ccc; text-decoration: none;">Become a Rider</a><br>
+                    <a href="#" style="color: #ccc; text-decoration: none;">Dashboard</a>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h6 class="fw-bold text-white">Support</h6>
+                    <a href="help.html" style="color: #ccc; text-decoration: none;">Help Center</a><br>
+                    <a href="#" style="color: #ccc; text-decoration: none;">Contact</a>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="d-flex flex-column flex-md-row justify-content-between small text-center text-md-start text-white">
+                <p>© 2026 Cravings. All rights reserved.</p>
+                <div>
+                    <a href="#" style="color: #ccc; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+                    <a href="#" style="color: #ccc; text-decoration: none;">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
